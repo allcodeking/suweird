@@ -493,6 +493,63 @@ footer {
   object-fit: cover;
 }
 
+.contract-section {
+  text-align: center;
+  margin: 0px auto;
+  padding: 30px 10px;
+  max-width: 110%;
+  padding: 20px;
+}
+
+.contract-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #bb00ff, #ff2fd0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #bb00ff, 0 0 25px #ff2fd0;
+}
+
+.ca-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(20, 20, 40, 0.7);
+  border: 2px solid #bb00ff;
+  border-radius: 12px;
+  padding: 12px 15px;
+  box-shadow: 0 0 20px #bb00ff, 0 0 10px #ff2fd0;
+  gap: 10px;
+}
+
+.ca-box span {
+  flex: 1;
+  font-family: 'Orbitron', Arial, sans-serif; /* pakai Orbitron */
+  color: #fff;
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  letter-spacing: 1px; /* biar lebih futuristik */
+}
+
+.ca-box button {
+  background: linear-gradient(45deg, #bb00ff, #ff2fd0);
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #bb00ff, 0 0 10px #ff2fd0;
+}
+
+.ca-box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff2fd0, 0 0 40px #bb00ff;
+}
+
+
 /* Animasi glow lembut */
 @keyframes imgGlow {
   from {
@@ -552,6 +609,10 @@ footer {
   .card {
     flex: 0 0 70%;
   }
+
+  #ca-text {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -573,17 +634,21 @@ footer {
     flex: 0 0 85%;
   }
 
+  #ca-text {
+    font-size: 0.9rem;
+  }
+
   /* Tweet responsif di HP */
   .tweet-container blockquote.twitter-tweet {
-    width: 90% !important;   /* biar nggak mepet layar */
-    max-width: 90% !important;
+    width: 95% !important;   /* biar nggak mepet layar */
+    max-width: 95% !important;
     margin: 0 auto !important;
     border-radius: 8px;
     box-shadow: 0 0 8px #bb00ff, 0 0 15px #ff2fd0;
   }
 
   .twitter-tweet {
-    max-width: 90% !important;
+    max-width: 100% !important;
     min-height: auto !important; /* tinggi ikut isi */
   }
 }
