@@ -194,7 +194,7 @@ body {
 section {
   padding: 80px 20px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 section h2 {
   font-size: 2.2rem;
@@ -408,14 +408,12 @@ footer {
 }
 
 /* Bungkus iframe di wrapper untuk style neon */
-
-
 .tweet-container {
   display: flex;
   flex-wrap: wrap;          /* biar bisa turun ke bawah kalau sempit */
   justify-content: center;  /* center semua tweet */
   gap: 40px;                /* jarak antar tweet */
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .tweet-container blockquote.twitter-tweet {
@@ -423,8 +421,8 @@ footer {
   max-width: 500px !important; /* batas di desktop */
   margin: 0 auto !important;
   border: 2px solid #bb00ff;
-  border-radius: 15px;
-  box-shadow: 0 0 15px #bb00ff, 0 0 30px #ff2fd0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #bb00ff, 0 0 20px #ff2fd0;
   overflow: hidden;
 }
 
