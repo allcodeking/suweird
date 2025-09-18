@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suweird - The Funky Side of Weird</title>
 
   <!-- SEO -->
-  <meta name="description" content="Suweird is a funky memecoin on the Sui blockchain. Fair launch, exclusive NFTs, and a strong community.">
+  <meta name="description"
+    content="Suweird is a funky memecoin on the Sui blockchain. Fair launch, exclusive NFTs, and a strong community.">
   <meta name="keywords" content="Suweird, memecoin, Sui blockchain, NFT, crypto, weird, community">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Suweird - The Funky Side of Weird">
-  <meta property="og:description" content="Join the weirdest memecoin movement on Sui blockchain. Fair launch, NFTs, and community-driven growth.">
+  <meta property="og:description"
+    content="Join the weirdest memecoin movement on Sui blockchain. Fair launch, NFTs, and community-driven growth.">
   <meta property="og:image" content="./asset/lg.png">
   <meta property="og:type" content="website">
 
@@ -27,37 +30,48 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Navbar -->
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">
-  <img src="./asset/lg.png" alt="logo" class="logo-img">
-  <span>SUWEIRD</span>
-  </div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#nft">NFT</a></li>
-      <li><a href="#utility">Utility</a></li>
-      <li><a href="#roadmap">Roadmap</a></li>
-      <li><a href="#community">Community</a></li>
-    </ul>
-    <div class="menu-toggle">☰</div>
-  </div>
-</nav>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="./asset/lg.png" alt="logo" class="logo-img">
+        <span>SUWEIRD</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#nft">NFT</a></li>
+        <li><a href="#utility">Utility</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </div>
+  </nav>
   <!-- Hero Section -->
   <section id="hero" class="hero">
-  <div class="hero-content">
-    <h1>SUWEIRD</h1>
-    <p class="tagline">The Funky Side of Weird</p>
-    <img class="img" src="./asset/mod.webp" alt="Suweird funky animation" loading="lazy">
-    <div class="hero-buttons">
-      <a href="#" class="btn">Buy on Moonbags</a>
-      <a href="https://t.me/suweird" class="btn-outline" target="_blank">Join Community</a>
+    <div class="hero-content">
+      <h1>SUWEIRD</h1>
+      <p class="tagline">The Funky Side of Weird</p>
+      <img class="img" src="./asset/mod.webp" alt="Suweird funky animation" loading="lazy">
+      <section class="contract-section">
+        <h2>Contract Address</h2>
+        <div class="ca-box">
+          <span id="ca-text">0x1234...ABCD</span>
+          <button onclick="copyCA()">Copy</button>
+        </div>
+      </section>
+
+      <!-- Notifikasi -->
+      <div id="notify-copy" class="notify">Copied!</div>
+      <div class="hero-buttons">
+        <a href="#" class="btn">Buy on Moonbags</a>
+        <a href="https://t.me/suweird" class="btn-outline" target="_blank">Join Community</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- About Section -->
   <section id="about" class="about">
@@ -72,98 +86,98 @@
 
   <!-- NFT Section -->
   <section id="nft" class="nft">
-  <h2>Exclusive NFTs</h2>
-  <p>Mint unique NFTs just by holding $WEIRD.</p>
+    <h2>Exclusive NFTs</h2>
+    <p>Mint unique NFTs just by holding $WEIRD.</p>
 
-  <div class="nft-carousel">
-  <button class="carousel-btn left">&#10094;</button>
-  <div class="nft-track">
-    <!-- Common -->
-    <div class="card">
-      <img src="./asset/1.jpg" alt="Neon Blaze NFT artwork - Common rarity" loading="lazy">
-      <h3>Neon Blaze</h3>
-      <span class="rarity common">Common</span>
-    </div>
-    <div class="card">
-      <img src="./asset/2.jpg" alt="Cyber Shogun NFT artwork - Common rarity" loading="lazy">
-      <h3>Cyber Shogun</h3>
-      <span class="rarity common">Common</span>
-    </div>
-    <div class="card">
-      <img src="./asset/4.jpg" alt="Pixel Pop NFT artwork - Common rarity" loading="lazy">
-      <h3>Pixel Pop</h3>
-      <span class="rarity common">Common</span>
-    </div>
-    <div class="card">
-      <img src="./asset/8.jpg" alt="Techno Striker NFT artwork - Common rarity" loading="lazy">
-      <h3>Techno Striker</h3>
-      <span class="rarity common">Common</span>
-    </div>
-    <div class="card">
-      <img src="./asset/14.jpg" alt="Chef Inferno NFT artwork - Common rarity" loading="lazy">
-      <h3>Chef Inferno</h3>
-      <span class="rarity common">Common</span>
-    </div>
-    <div class="card">
-      <img src="./asset/12.jpg" alt="Hoop Frenzy NFT artwork - Common rarity" loading="lazy">
-      <h3>Hoop Frenzy</h3>
-      <span class="rarity common">Common</span>
+    <div class="nft-carousel">
+      <button class="carousel-btn left">&#10094;</button>
+      <div class="nft-track">
+        <!-- Common -->
+        <div class="card">
+          <img src="./asset/1.jpg" alt="Neon Blaze NFT artwork - Common rarity" loading="lazy">
+          <h3>Neon Blaze</h3>
+          <span class="rarity common">Common</span>
+        </div>
+        <div class="card">
+          <img src="./asset/2.jpg" alt="Cyber Shogun NFT artwork - Common rarity" loading="lazy">
+          <h3>Cyber Shogun</h3>
+          <span class="rarity common">Common</span>
+        </div>
+        <div class="card">
+          <img src="./asset/4.jpg" alt="Pixel Pop NFT artwork - Common rarity" loading="lazy">
+          <h3>Pixel Pop</h3>
+          <span class="rarity common">Common</span>
+        </div>
+        <div class="card">
+          <img src="./asset/8.jpg" alt="Techno Striker NFT artwork - Common rarity" loading="lazy">
+          <h3>Techno Striker</h3>
+          <span class="rarity common">Common</span>
+        </div>
+        <div class="card">
+          <img src="./asset/14.jpg" alt="Chef Inferno NFT artwork - Common rarity" loading="lazy">
+          <h3>Chef Inferno</h3>
+          <span class="rarity common">Common</span>
+        </div>
+        <div class="card">
+          <img src="./asset/12.jpg" alt="Hoop Frenzy NFT artwork - Common rarity" loading="lazy">
+          <h3>Hoop Frenzy</h3>
+          <span class="rarity common">Common</span>
+        </div>
+
+        <!-- Uncommon -->
+        <div class="card">
+          <img src="./asset/3.jpg" alt="Skate Voltage NFT artwork - Uncommon rarity" loading="lazy">
+          <h3>Skate Voltage</h3>
+          <span class="rarity uncommon">Uncommon</span>
+        </div>
+        <div class="card">
+          <img src="./asset/13.jpg" alt="Circuit Rider NFT artwork - Uncommon rarity" loading="lazy">
+          <h3>Circuit Rider</h3>
+          <span class="rarity uncommon">Uncommon</span>
+        </div>
+        <div class="card">
+          <img src="./asset/7.jpg" alt="Card Phantom NFT artwork - Uncommon rarity" loading="lazy">
+          <h3>Card Phantom</h3>
+          <span class="rarity uncommon">Uncommon</span>
+        </div>
+
+        <!-- Rare -->
+        <div class="card">
+          <img src="./asset/5.jpg" alt="Flame Vortex NFT artwork - Rare rarity" loading="lazy">
+          <h3>Flame Vortex</h3>
+          <span class="rarity rare">Rare</span>
+        </div>
+        <div class="card">
+          <img src="./asset/10.jpg" alt="Retro Beat NFT artwork - Rare rarity" loading="lazy">
+          <h3>Retro Beat</h3>
+          <span class="rarity rare">Rare</span>
+        </div>
+
+        <!-- Epic -->
+        <div class="card">
+          <img src="./asset/6.jpg" alt="Holo Whisper NFT artwork - Epic rarity" loading="lazy">
+          <h3>Holo Whisper</h3>
+          <span class="rarity epic">Epic</span>
+        </div>
+        <div class="card">
+          <img src="./asset/9.jpg" alt="Laser Dread NFT artwork - Epic rarity" loading="lazy">
+          <h3>Laser Dread</h3>
+          <span class="rarity epic">Epic</span>
+        </div>
+
+        <!-- Legendary -->
+        <div class="card">
+          <img src="./asset/11.jpg" alt="Blade Sage NFT artwork - Legendary rarity" loading="lazy">
+          <h3>Blade Sage</h3>
+          <span class="rarity legendary">Legendary</span>
+        </div>
+      </div>
+      <button class="carousel-btn right">&#10095;</button>
     </div>
 
-    <!-- Uncommon -->
-    <div class="card">
-      <img src="./asset/3.jpg" alt="Skate Voltage NFT artwork - Uncommon rarity" loading="lazy">
-      <h3>Skate Voltage</h3>
-      <span class="rarity uncommon">Uncommon</span>
-    </div>
-    <div class="card">
-      <img src="./asset/13.jpg" alt="Circuit Rider NFT artwork - Uncommon rarity" loading="lazy">
-      <h3>Circuit Rider</h3>
-      <span class="rarity uncommon">Uncommon</span>
-    </div>
-    <div class="card">
-      <img src="./asset/7.jpg" alt="Card Phantom NFT artwork - Uncommon rarity" loading="lazy">
-      <h3>Card Phantom</h3>
-      <span class="rarity uncommon">Uncommon</span>
-    </div>
-
-    <!-- Rare -->
-    <div class="card">
-      <img src="./asset/5.jpg" alt="Flame Vortex NFT artwork - Rare rarity" loading="lazy">
-      <h3>Flame Vortex</h3>
-      <span class="rarity rare">Rare</span>
-    </div>
-    <div class="card">
-      <img src="./asset/10.jpg" alt="Retro Beat NFT artwork - Rare rarity" loading="lazy">
-      <h3>Retro Beat</h3>
-      <span class="rarity rare">Rare</span>
-    </div>
-
-    <!-- Epic -->
-    <div class="card">
-      <img src="./asset/6.jpg" alt="Holo Whisper NFT artwork - Epic rarity" loading="lazy">
-      <h3>Holo Whisper</h3>
-      <span class="rarity epic">Epic</span>
-    </div>
-    <div class="card">
-      <img src="./asset/9.jpg" alt="Laser Dread NFT artwork - Epic rarity" loading="lazy">
-      <h3>Laser Dread</h3>
-      <span class="rarity epic">Epic</span>
-    </div>
-
-    <!-- Legendary -->
-    <div class="card">
-      <img src="./asset/11.jpg" alt="Blade Sage NFT artwork - Legendary rarity" loading="lazy">
-      <h3>Blade Sage</h3>
-      <span class="rarity legendary">Legendary</span>
-    </div>
-  </div>
-  <button class="carousel-btn right">&#10095;</button>
-</div>
-
-  <a href="#" class="btn" id="mintBtn">Mint NFT</a>
-  <div id="notify" class="notify">Coming Soon!</div>
-</section>
+    <a href="#" class="btn" id="mintBtn">Mint NFT</a>
+    <div id="notify-mint" class="notify">Coming Soon!</div>
+  </section>
 
   <!-- Utility -->
   <section id="utility" class="utility">
@@ -180,53 +194,66 @@
   <section id="roadmap" class="roadmap">
     <h2>Roadmap</h2>
     <div class="steps">
-      <div class="step"><h3>Phase 1</h3><p>Token Launch on Moonbags</p></div>
-      <div class="step"><h3>Phase 2</h3><p>Community Building & Listings</p></div>
-      <div class="step"><h3>Phase 3</h3><p>Holder-Only NFT Mint</p></div>
-      <div class="step"><h3>Phase 4</h3><p>Ecosystem Expansion</p></div>
+      <div class="step">
+        <h3>Phase 1</h3>
+        <p>Token Launch on Moonbags</p>
+      </div>
+      <div class="step">
+        <h3>Phase 2</h3>
+        <p>Community Building & Listings</p>
+      </div>
+      <div class="step">
+        <h3>Phase 3</h3>
+        <p>Holder-Only NFT Mint</p>
+      </div>
+      <div class="step">
+        <h3>Phase 4</h3>
+        <p>Ecosystem Expansion</p>
+      </div>
     </div>
   </section>
 
   <!-- Community -->
   <section id="community" class="community">
-  <h2>Join the Community</h2>
-  <p>Be part of the weirdest and funkiest movement on the blockchain.  
-     Connect with us through our social platforms:</p>
-  
-  <div class="socials">
-  <a href="https://twitter.com/SuiWeird">Twitter</a>
-  <a href="https://t.me/suweird">Telegram</a>
-  </div>
+    <h2>Join the Community</h2>
+    <p>Be part of the weirdest and funkiest movement on the blockchain.
+      Connect with us through our social platforms:</p>
+
+    <div class="socials">
+      <a href="https://twitter.com/SuiWeird">Twitter</a>
+      <a href="https://t.me/suweird">Telegram</a>
+    </div>
   </section>
 
-<!-- Twitter Timeline Embed -->
-<section id="tweets">
-  <h2>Latest Tweets</h2>
-  <div class="tweet-container">
-    
-    <!-- Tweet 1 -->
-    <blockquote class="twitter-tweet" data-media-max-width="560" data-dnt="true" data-theme="dark">
-      <p lang="en" dir="ltr">
-        Suweird is a decentralized memecoin on the Sui blockchain, More than just a meme, Suweird blends community-driven growth with transparent tokenomics and the upcoming NFT ecosystem.<br><br>
-        Join weird Gank
-        <a href="https://t.co/P8FKD07fQW">https://t.co/P8FKD07fQW</a>
-        <a href="https://t.co/cr98bCdgNU">pic.twitter.com/cr98bCdgNU</a>
-      </p>&mdash; SuWeird (@SuiWeird)
-      <a href="https://twitter.com/SuiWeird/status/1968560694678487053?ref_src=twsrc%5Etfw">September 18, 2025</a>
-    </blockquote>
+  <!-- Twitter Timeline Embed -->
+  <section id="tweets">
+    <h2>Latest Tweets</h2>
+    <div class="tweet-container">
 
-    <!-- Tweet 2 -->
-    <blockquote class="twitter-tweet" data-media-max-width="560" data-lang="en" data-theme="dark">
-      <p lang="en" dir="ltr">
-        Join our Weird Gank now<br>
-        Tg : <a href="https://t.co/aj8LJCPWQ0">https://t.co/aj8LJCPWQ0</a>
-        <a href="https://t.co/EbOg2Tlzme">pic.twitter.com/EbOg2Tlzme</a>
-      </p>&mdash; SuWeird (@SuiWeird)
-      <a href="https://twitter.com/SuiWeird/status/1968552380099875205?ref_src=twsrc%5Etfw">September 18, 2025</a>
-    </blockquote>
+      <!-- Tweet 1 -->
+      <blockquote class="twitter-tweet" data-media-max-width="560" data-dnt="true" data-theme="dark">
+        <p lang="en" dir="ltr">
+          Suweird is a decentralized memecoin on the Sui blockchain, More than just a meme, Suweird blends
+          community-driven growth with transparent tokenomics and the upcoming NFT ecosystem.<br><br>
+          Join weird Gank
+          <a href="https://t.co/P8FKD07fQW">https://t.co/P8FKD07fQW</a>
+          <a href="https://t.co/cr98bCdgNU">pic.twitter.com/cr98bCdgNU</a>
+        </p>&mdash; SuWeird (@SuiWeird)
+        <a href="https://twitter.com/SuiWeird/status/1968560694678487053?ref_src=twsrc%5Etfw">September 18, 2025</a>
+      </blockquote>
 
-  </div>
-</section>
+      <!-- Tweet 2 -->
+      <blockquote class="twitter-tweet" data-media-max-width="560" data-lang="en" data-theme="dark">
+        <p lang="en" dir="ltr">
+          Join our Weird Gank now<br>
+          Tg : <a href="https://t.co/aj8LJCPWQ0">https://t.co/aj8LJCPWQ0</a>
+          <a href="https://t.co/EbOg2Tlzme">pic.twitter.com/EbOg2Tlzme</a>
+        </p>&mdash; SuWeird (@SuiWeird)
+        <a href="https://twitter.com/SuiWeird/status/1968552380099875205?ref_src=twsrc%5Etfw">September 18, 2025</a>
+      </blockquote>
+
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -236,13 +263,13 @@
   <!-- JavaScript -->
   <script>
     // Tombol Mint -> Notifikasi
-    const btn = document.getElementById('mintBtn');
-    const notify = document.getElementById('notify');
-    btn.addEventListener('click', function(e) {
+    const btnMint = document.getElementById('mintBtn');
+    const notifyMint = document.getElementById('notify-mint');
+    btnMint.addEventListener('click', function (e) {
       e.preventDefault();
-      notify.classList.add('show');
+      notifyMint.classList.add('show');
       setTimeout(() => {
-        notify.classList.remove('show');
+        notifyMint.classList.remove('show');
       }, 1000);
     });
 
@@ -285,29 +312,62 @@
     });
   </script>
   <script>
-  // Navbar toggle (mobile)
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+    // Navbar toggle (mobile)
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-  menuToggle.addEventListener('click', (e) => {
-    e.stopPropagation(); // biar klik ☰ gak langsung nutup
-    navLinks.classList.toggle('active');
-  });
-
-  // Klik di mana saja untuk nutup menu
-  document.addEventListener('click', (e) => {
-    if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && e.target !== menuToggle) {
-      navLinks.classList.remove('active');
-    }
-  });
-
-  // Klik link juga nutup menu
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation(); // biar klik ☰ gak langsung nutup
+      navLinks.classList.toggle('active');
     });
-  });
- </script>
+
+    // Klik di mana saja untuk nutup menu
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && e.target !== menuToggle) {
+        navLinks.classList.remove('active');
+      }
+    });
+
+    // Klik link juga nutup menu
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+  <script>
+    const fullCA = "coming soon"; // isi CA asli
+    const caTextEl = document.getElementById("ca-text");
+
+    function updateCA() {
+      if (window.innerWidth <= 768) {
+        caTextEl.innerText = fullCA.slice(0, 6) + "..." + fullCA.slice(-6);
+      } else {
+        caTextEl.innerText = fullCA;
+      }
+    }
+
+    updateCA();
+    window.addEventListener("resize", updateCA);
+
+    document.getElementById("copy-btn").addEventListener("click", () => {
+      navigator.clipboard.writeText(fullCA).then(() => {
+        alert("Copied: " + fullCA);
+      });
+    });
+  </script>
+  <script>
+    function copyCA() {
+    navigator.clipboard.writeText(fullCA).then(() => {
+      const notifyCopy = document.getElementById("notify-copy");
+      notifyCopy.classList.add("show");
+      setTimeout(() => {
+        notifyCopy.classList.remove("show");
+      }, 2000);
+    });
+    }
+  </script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
+
 </html>
