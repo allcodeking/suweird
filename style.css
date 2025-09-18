@@ -407,20 +407,22 @@ footer {
   animation: flicker 1.5s infinite;
 }
 
-.twitter-timeline {
-  all: unset !important;   /* reset semua style biar nggak bentrok */
-  display: block !important;
-  margin: 40px auto !important;
-  max-width: 600px !important; /* batas biar rapi */
-}
-
+/* Bungkus iframe di wrapper untuk style neon */
 .twitter-wrapper {
   margin: 40px auto;
   max-width: 600px;
   border: 2px solid #bb00ff;
   border-radius: 15px;
   box-shadow: 0 0 15px #bb00ff, 0 0 30px #ff2fd0;
-  overflow: hidden; /* biar iframe nggak keluar */
+  overflow: hidden; /* biar iframe tidak meleber keluar */
+}
+
+/* Reset supaya script Twitter bisa ganti <a> jadi <iframe> */
+.twitter-timeline {
+  all: unset !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
 /* Hero Image */
@@ -585,11 +587,6 @@ footer {
     background: linear-gradient(45deg, #bb00ff, #ff2fd0);
     color: #000;
     box-shadow: 0 0 20px #ff2fd0;
-  }
-
-  .twitter-timeline {
-    max-width: 800px;   /* batasi lebar di desktop */
-    margin: 60px auto;  /* kasih ruang lebih */
   }
 
   /* Footer */
