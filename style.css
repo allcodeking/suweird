@@ -159,7 +159,7 @@ body {
 .btn-outline {
   margin-top: 130px;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 20px;
   /* konsisten */
   border-radius: 30px;
   /* konsisten */
@@ -622,7 +622,7 @@ footer {
 
   .hero-buttons a {
     display: block;
-    width: 100%;
+    width: 75%;
     margin: 10px auto;
   }
 
@@ -684,7 +684,7 @@ footer {
   }
 
   .hero-buttons a {
-    padding: 14px 40px;
+    padding: 10px 20px;
     font-size: 1.1rem;
     border-radius: 40px;
     margin: 0;
