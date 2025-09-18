@@ -459,7 +459,7 @@ footer {
 }
 
 .tweet-container blockquote.twitter-tweet {
-  width: 80% !important;
+  width: 60% !important;
   /* penuh di HP */
   max-width: 500px !important;
   /* batas di desktop */
