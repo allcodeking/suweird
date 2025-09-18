@@ -459,7 +459,7 @@ footer {
 }
 
 .tweet-container blockquote.twitter-tweet {
-  width: 60% !important;
+  width: 80% !important;
   /* penuh di HP */
   max-width: 500px !important;
   /* batas di desktop */
@@ -571,6 +571,20 @@ footer {
 
   .card {
     flex: 0 0 85%;
+  }
+
+  /* Tweet responsif di HP */
+  .tweet-container blockquote.twitter-tweet {
+    width: 95% !important;   /* biar nggak mepet layar */
+    max-width: 95% !important;
+    margin: 0 auto !important;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #bb00ff, 0 0 15px #ff2fd0;
+  }
+
+  .twitter-tweet {
+    max-width: 100% !important;
+    min-height: auto !important; /* tinggi ikut isi */
   }
 }
 
