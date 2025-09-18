@@ -575,8 +575,8 @@ footer {
 
   /* Tweet responsif di HP */
   .tweet-container blockquote.twitter-tweet {
-    width: 75% !important;   /* biar nggak mepet layar */
-    max-width: 75% !important;
+    width: 50% !important;   /* biar nggak mepet layar */
+    max-width: 50% !important;
     margin: 0 auto !important;
     border-radius: 8px;
     box-shadow: 0 0 8px #bb00ff, 0 0 15px #ff2fd0;
