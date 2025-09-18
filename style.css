@@ -459,7 +459,7 @@ footer {
 }
 
 .tweet-container blockquote.twitter-tweet {
-  width: 100% !important;
+  width: 80% !important;
   /* penuh di HP */
   max-width: 500px !important;
   /* batas di desktop */
@@ -689,12 +689,29 @@ footer {
   .tweet-container {
     display: flex;
     flex-wrap: wrap;
-    /* biar bisa turun ke bawah kalau sempit */
     justify-content: center;
-    /* center semua tweet */
     gap: 40px;
-    /* jarak antar tweet */
     margin-top: 10px;
+  }
+
+  .tweet-container blockquote.twitter-tweet {
+    width: 100% !important;
+    /* penuh di HP */
+    max-width: 500px !important;
+    /* batas di desktop */
+    margin: 0 auto !important;
+    border: 2px solid #bb00ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bb00ff, 0 0 20px #ff2fd0;
+    overflow: hidden;
+  }
+
+  .twitter-tweet {
+    max-width: 370px !important;
+    min-height: 500px !important;
+    border: 2px solid #bb00ff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #bb00ff, 0 0 30px #ff2fd0;
   }
 
   .socials a:hover {
