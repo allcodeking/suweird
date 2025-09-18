@@ -408,13 +408,19 @@ footer {
 }
 
 .twitter-timeline {
-  margin-top: 40px;
-  display: block;
-  margin: 40px auto;    /* rata tengah */
-  max-width: 100%;      /* biar responsif */
+  all: unset !important;   /* reset semua style biar nggak bentrok */
+  display: block !important;
+  margin: 40px auto !important;
+  max-width: 600px !important; /* batas biar rapi */
+}
+
+.twitter-wrapper {
+  margin: 40px auto;
+  max-width: 600px;
   border: 2px solid #bb00ff;
   border-radius: 15px;
   box-shadow: 0 0 15px #bb00ff, 0 0 30px #ff2fd0;
+  overflow: hidden; /* biar iframe nggak keluar */
 }
 
 /* Hero Image */
